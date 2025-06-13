@@ -5,52 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <!-- ========== Header & Navigation ========== -->
     <header>
         <h2>My Blog Website</h2>
         <nav>
             <ul>
-                <a href="index.html">Home</a> |
-                <a href="blog.html">Blog posts</a> |
-                <a href="contact.html">Contact</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr />
     </header>
 
     <!-- ========== Blog Posts ========== -->
     <section>
         <!-- === Post 01 === -->
-        <article>
+        <article class="blog-post">
             <h2><a href="blog.html#post01">Post Title 01</a></h2>
             <p>This is a short description of the first blog post.</p>
             <time datetime="2024-12-01">December 1, 2024</time>
-            <hr />
         </article>
+
         <!-- === Post 02 === -->
-        <article>
+        <article class="blog-post">
             <h2><a href="blog.html#post02">Post Title 02</a></h2>
-            <p>This is a short description of the first blog post.</p>
+            <p>This is a short description of the second blog post.</p>
             <time datetime="2024-11-25">November 25, 2024</time>
-            <hr />
         </article>
+
         <!-- === Post 03 === -->
-        <article>
+        <article class="blog-post">
             <h2><a href="blog.html#post03">Post Title 03</a></h2>
-            <p>This is a short description of the first blog post.</p>
+            <p>This is a short description of the third blog post.</p>
             <time datetime="2024-11-18">November 18, 2024</time>
-            <hr />
         </article>
     </section>
 
     <!-- ========== Footer ========== -->
     <footer>
-        <p align="center">
+        <p>
             &copy; 2025 My Blog <br />
-            Coding by: Khaled Radwan</p>
+            Coding by: Khaled Radwan
+        </p>
     </footer>
 
 </body>

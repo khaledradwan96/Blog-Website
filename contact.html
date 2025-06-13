@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website | Contact</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,41 +15,35 @@
         <h2>My Blog Website</h2>
         <nav>
             <ul>
-                <a href="index.html">Home</a> |
-                <a href="blog.html">Blog posts</a> |
-                <a href="contact.html">Contact</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr />
     </header>
 
 
     <!-- ========== Contact Form ========== -->
-    <section>
+    <section class="contact-form">
         <h2>Contact Us</h2>
         <form action="">
             <label for="name">Your Name:</label>
             <input type="text" name="name" id="name" required>
-            <br />
 
             <label for="email">Your Email:</label>
             <input type="email" name="email" id="email" required>
-            <br />
 
             <label for="message">Your Message:</label>
             <textarea name="message" id="message" rows="5" cols="30" required></textarea>
-            <br />
-            <br />
 
             <input type="submit" value="Send Message">
         </form>
-        <hr />
     </section>
 
     <!-- ========== Contact Information ========== -->
-    <section>
+    <section class="contact-info">
         <h2>Contact Information</h2>
-        <table border="2">
+        <table>
             <thead>
                 <th>Day</th>
                 <th>Opening Time</th>
@@ -74,11 +69,7 @@
                 </tr>
             </tbody>
         </table>
-        <hr>
-    </section>
-
-    <section>
-        <p>
+        <p style="text-align: center;">
             for further inquires, you can also email us at
             <a href="mailto:info@myblog.com">info@myblog.com</a>
         </p>
@@ -86,9 +77,10 @@
 
     <!-- ========== Footer ========== -->
     <footer>
-        <p align="center">
+        <p>
             &copy; 2025 My Blog <br />
-            Coding by: Khaled Radwan</p>
+            Coding by: Khaled Radwan
+        </p>
     </footer>
 
 </body>

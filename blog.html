@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website | Posts</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -14,12 +15,11 @@
         <h2>My Blog Website</h2>
         <nav>
             <ul>
-                <a href="index.html">Home</a> |
-                <a href="blog.html">Blog posts</a> |
-                <a href="contact.html">Contact</a>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="blog.html">Blog posts</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-        <hr />
     </header>
 
     <!-- ========== Home Page ========== -->
@@ -30,59 +30,61 @@
             <li><a href="#post02">Post Title 02</a></li>
             <li><a href="#post03">Post Title 03</a></li>
         </ul>
-        <hr>
     </section>
 
     <!-- ========== Blog Posts ========== -->
     <!-- === Post 01 === -->
-    <section id="post01">
-        <h1>Post Title 01</h1>
+    <section id="post01" class="blog-post">
+        <h3>Post Title 01</h3>
         <address>By John Doe</address>
         <time datetime="2024-12-01">December 1, 2024</time>
         <p>This is a short description of the first blog post.</p>
         <img src="images/post 01.avif" alt="image of post 01">
         <p>For more details, visit <a href="https://www.google.com/" target="_blank">this link</a></p>
-        <h3>Key Points:</h3>
+        <h4>Key Points:</h4>
         <ul>
             <li>introduction to the topic</li>
             <li>Key insights</li>
             <li>Conclusion</li>
         </ul>
-        <hr />
     </section>
 
     <!-- === Post 02 === -->
-    <section id="post02">
-        <h1>Post Title 02</h1>
+    <section id="post02" class="blog-post">
+        <h3>Post Title 02</h3>
         <address>By Jane Smith</address>
         <time datetime="2024-11-25">November 25, 2024</time>
         <p>This is a short description of the second blog post.</p>
         <img src="images/post 02.avif" alt="image of post 02">
         <p>Find out more at <a href="https://www.google.com/" target="_blank">this resource</a></p>
-        <hr />
+        <h4>Important Topics:</h4>
+        <ol>
+            <li>Background</li>
+            <li>Analysis</li>
+            <li>Future Directions</li>
+        </ol>
     </section>
 
     <!-- === Post 03 === -->
-    <section id="post03">
-        <h1>Post Title 03</h1>
+    <section id="post03" class="blog-post">
+        <h3>Post Title 03</h3>
         <address>By Alex Brown</address>
         <time datetime="2024-11-18">November 18, 2024</time>
         <p>This is a short description of the third blog post.</p>
         <img src="images/post 03.avif" alt="image of post 03">
         <p>Learn more at <a href="https://www.google.com/" target="_blank">this link</a></p>
-        <h3>Takeaways:</h3>
+        <h4>Takeaways:</h4>
         <ul>
             <li>Lesson 01</li>
             <li>Lesson 02</li>
             <li>Lesson 03</li>
         </ul>
-        <hr />
     </section>
 
 
     <!-- ========== Footer ========== -->
     <footer>
-        <p align="center">
+        <p>
             &copy; 2025 My Blog <br />
             Coding by: Khaled Radwan</p>
     </footer>
