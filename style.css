@@ -13,16 +13,28 @@ section {
 
 /* ========== header ========== */
 header {
-  background-color: #333;
+  background-color: #007acc;
   color: white;
   padding: 20px;
   text-align: center;
 }
-header h2 {
+header nav {
+  background-color: #0c4d75;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
   color: white;
+  border-radius: 12px;
+}
+header h2 {
   font-size: 32px;
-  margin: 20px 0 10px;
-  padding: 5px;
+  margin: 0;
+}
+header a {
+  color: white;
 }
 
 nav ul {
@@ -32,14 +44,22 @@ nav ul {
   justify-content: center;
   gap: 20px;
 }
-
 a {
   text-decoration: none;
   color: #007acc;
 }
-
 a:hover {
   text-decoration: underline;
+}
+@media screen and (max-width: 576px) {
+  header nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
 }
 
 /* ========== Blog Post Section ========== */
@@ -77,10 +97,15 @@ a:hover {
   font-size: 24px;
   margin: 20px 0 10px;
 }
+.blog-post address {
+  color: #7a7a7a;
+}
+.blog-post time {
+  color: #a5a5a5;
+}
 .blog-post p {
   margin: 10px 0;
   padding: 5px;
-  text-align: justify;
 }
 .blog-post img {
   width: 100%;
@@ -173,9 +198,56 @@ a:hover {
 
 /* ========== Footer ========== */
 footer {
-  margin-top: 40px;
-  padding: 20px;
-  background-color: #333;
+  /* margin-top: 40px; */
+  border-radius: 12px;
+  padding: 5px;
+  background-color: #007acc;
   color: white;
   text-align: center;
+}
+footer p span {
+  color: goldenrod;
+  font-weight: bold;
+}
+
+/* =========== home posts section =========== */
+.home-posts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  text-align: center;
+  background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+}
+address {
+  color: #7a7a7a;
+}
+.home-posts .blog-post ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .home-posts {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* ================= font in screen ================ */
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .blog-post h3 {
+    font-size: 20px;
+  }
+
+  header h2 {
+    font-size: 24px;
+  }
 }

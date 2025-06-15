@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Website</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
 
     <!-- ========== Header & Navigation ========== -->
     <header>
-        <h2>My Blog Website</h2>
         <nav>
+            <h2>My Blog</h2>
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="blog.html">Blog posts</a></li>
@@ -22,36 +24,71 @@
         </nav>
     </header>
 
+    <!-- ========== Blog Layout ========== -->
+    <section class="blog-list">
+        <h3 style="text-align: center;">Blog List</h3>
+        <ul>
+            <li><a href="#post01">Post Title 01</a></li>
+            <li><a href="#post02">Post Title 02</a></li>
+            <li><a href="#post03">Post Title 03</a></li>
+        </ul>
+    </section>
+
     <!-- ========== Blog Posts ========== -->
-    <section>
+    <div class="home-posts">
         <!-- === Post 01 === -->
-        <article class="blog-post">
-            <h2><a href="blog.html#post01">Post Title 01</a></h2>
-            <p>This is a short description of the first blog post.</p>
+        <section id="post01" class="blog-post">
+            <h3>Post Title 01</h3>
+            <address>By John Doe</address>
             <time datetime="2024-12-01">December 1, 2024</time>
-        </article>
+            <p>This is a short description of the first blog post.</p>
+            <img src="images/post 01.avif" alt="image of post 01">
+            <p>For more details, visit <a href="https://www.google.com/" target="_blank">this link</a></p>
+            <h4>Key Points:</h4>
+            <ul>
+                <li>introduction to the topic</li>
+                <li>Key insights</li>
+                <li>Conclusion</li>
+            </ul>
+        </section>
 
         <!-- === Post 02 === -->
-        <article class="blog-post">
-            <h2><a href="blog.html#post02">Post Title 02</a></h2>
-            <p>This is a short description of the second blog post.</p>
+        <section id="post02" class="blog-post">
+            <h3>Post Title 02</h3>
+            <address>By Jane Smith</address>
             <time datetime="2024-11-25">November 25, 2024</time>
-        </article>
+            <p>This is a short description of the second blog post.</p>
+            <img src="images/post 02.avif" alt="image of post 02">
+            <p>Find out more at <a href="https://www.google.com/" target="_blank">this resource</a></p>
+            <h4>Important Topics:</h4>
+            <ol>
+                <li>Background</li>
+                <li>Analysis</li>
+                <li>Future Directions</li>
+            </ol>
+        </section>
 
         <!-- === Post 03 === -->
-        <article class="blog-post">
-            <h2><a href="blog.html#post03">Post Title 03</a></h2>
-            <p>This is a short description of the third blog post.</p>
+        <section id="post03" class="blog-post">
+            <h3>Post Title 03</h3>
+            <address>By Alex Brown</address>
             <time datetime="2024-11-18">November 18, 2024</time>
-        </article>
-    </section>
+            <p>This is a short description of the third blog post.</p>
+            <img src="images/post 03.jpg" alt="image of post 03">
+            <p>Learn more at <a href="https://www.google.com/" target="_blank">this link</a></p>
+            <h4>Takeaways:</h4>
+            <ul>
+                <li>Lesson 01</li>
+                <li>Lesson 02</li>
+                <li>Lesson 03</li>
+            </ul>
+        </section>
+    </div>
 
     <!-- ========== Footer ========== -->
     <footer>
         <p>
-            &copy; 2025 My Blog <br />
-            Coding by: Khaled Radwan
-        </p>
+            &copy; 2025 My Blog - <span>Coding by: Khaled Radwan</span> </p>
     </footer>
 
 </body>
